@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>contact</title>
+    </head>
+            <h1>Appointment Form</h1>
+    <form action="submit.php" method="POST">
+
+            <!--text input-->
+            <label>Full Name:</label>
+            <input type="text" name="full name" placeholder="Surname First" required>
+<br><br>
+            <!--email input-->
+            <label>Email Address:</label>
+            <input type="text" name="email" placeholder="yourname@domain.com" required>
+<br><br>
+            <!--password input-->
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter your password here" required>
+<br><br>
+            <!--radio button-->
+            <label>Gender</label><br>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" namae="gender" value="female">Female
+<br><br>          
+            <!--checkboxes-->
+            <label>Select Your Hobbies</label><br>
+            <input type="checkbox" name="hobby" value="singing">Singing
+            <input type="checkbox" name="hobby" value="hiking">Hiking
+            <input type="checkbox" name="hobby" value="swimming">Swimming
+            <input type="checkbox" name="hobby" value="football">Football
+<br><br>            
+            <!--dropdown menu-->
+            <label>Select your Favourite Games</label>
+            <select name="games">
+            <option></option>
+            <option>Tennis</option>
+            <option>Golf</option>
+            <option>Snookers</option>
+            <option>Monopoly</option>
+            <option>Atlethics</option>
+            <option>playing chess</option>
+            </select>
+<br><br>
+            <!--message-->
+            <label>Why are you booking this appointment?</label>
+<br>
+            <textarea name="message" rows="10" cols="20" placeholder="Just be sincere"></textarea>
+<br><br>
+            <!--submit-->
+            <button type="submit">Submit</button>
+    </form>
+</html>

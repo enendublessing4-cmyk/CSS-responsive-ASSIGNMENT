@@ -1,0 +1,125 @@
+/* GENERAL STYLING */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2a2a2a;
+    padding: 20px;
+    text-align: center;
+    color: white
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+a:hover {
+    color: yellow;
+}
+
+
+
+/* HEADER */
+.header {
+    margin-top: 80px;
+    text-align: center;
+    padding: 40px;
+    background-color: #4a90e2;
+    color: white;
+}
+
+/* ABOUT SECTION */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.about-container img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.bio {
+    max-width: 600px;
+}
+
+/* SKILLS SECTION */
+.skills {
+    text-align: center;
+    padding: 40px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skills-container div {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* PROJECT SECTION */
+.projects {
+    text-align: center;
+    padding: 40px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    background-color: #4a90e2;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* BUTTONS */
+button {
+    background-color: white;
+    color: #4a90e2;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+/* CONTACT SECTION */
+.contact {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
