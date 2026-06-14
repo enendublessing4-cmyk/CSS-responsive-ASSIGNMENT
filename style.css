@@ -9,12 +9,22 @@ body {
 nav {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background-color: #2a2a2a;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
-    color: white
+    color: white;
+    z-index: 1000;
 }
+
+
+.navbar{
+background-color: #333;
+color: #fafafa;
+text-align: center;
+}
+
 
 /* LINKS */
 a {
@@ -38,6 +48,26 @@ a:hover {
     color: white;
 }
 
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.header-text {
+    text-align: left;
+}
+
+
+
 /* ABOUT SECTION */
 .about-container {
     display: flex;
@@ -47,8 +77,9 @@ a:hover {
 }
 
 .about-container img {
-    width: 150px;
-    height: 200px;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -95,6 +126,11 @@ a:hover {
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
 }
 
 .card img {
@@ -122,4 +158,107 @@ button:hover {
     color: white;
     text-align: center;
     padding: 40px;
+}
+
+.footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 8px;
+}
+
+
+/* TABLETS */
+@media (max-width: 768px) {
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header {
+        padding: 30px 20px;
+    }
+
+    .projects,
+    .skills,
+    .contact {
+        padding: 30px 20px;
+    }
+   
+    .card {
+        width: 80%;
+        max-width: 350px;
+    }
+}
+
+/* MOBILE PHONES */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .about-container {
+        padding: 20px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .contact {
+        padding: 25px 15px;
+    }
+}
+
+a,
+button,
+.card {
+    transition: all 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-text {
+        text-align: center;
+    }
+}
+
+.hr hr {
+    border-top: 1px solid #4a90e2;
+    background-color: #4a90e2;
+    height: 0;
+    width: 70%;
+    margin: 20px auto;
+    color: white;
 }
